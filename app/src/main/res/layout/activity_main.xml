@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginHorizontal="10dp"
+    android:layout_marginVertical="10dp"
+    android:background="@color/fondo"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        android:text="RETO 3"
+        android:textColor="@color/titulo"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="Ingresar su calificación del 1 al 100"
+        android:textSize="20sp"
+        android:layout_gravity="center"/>
+    
+    <EditText
+        android:id="@+id/nota"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:hint="Ingrese aqui su calificación"
+        android:textAlignment="center"
+        android:layout_gravity="center"
+        android:textSize="20sp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/boton1"
+        android:layout_width="112dp"
+        android:layout_height="34dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        android:background="@color/boton"
+        android:text="Determinar"
+        android:onClick="determinar"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/letra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Su letra es: "
+        android:textSize="25sp"
+        android:layout_gravity="center"
+        android:textAlignment="center"/>
+
+
+</LinearLayout>
